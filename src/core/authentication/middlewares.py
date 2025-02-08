@@ -55,6 +55,6 @@ class AuthenticationMiddleware(BaseMiddleware):
         return decoded, user
 
     async def _get_user(self, decoded_token: dict) -> Union[User, None]:
-        if not decoded_token.get('id'):
+        if not decoded_token.get("id"):
             return None
         return await User.get_or_none(id=decoded_token["id"])

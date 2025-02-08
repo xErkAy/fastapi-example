@@ -2,9 +2,9 @@
 typecheck = ["mypy"]
 
 [tool.aerich]
-tortoise_orm = "core.settings.DATABASE"
 location = "./src/migrations"
 src_folder = "./src"
+tortoise_orm = "core.settings.DATABASE"
 
 [tool.ruff]
 line-length = 160
