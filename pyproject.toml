@@ -6,9 +6,10 @@ requires = ["poetry-core"]
 typecheck = ["mypy"]
 
 [tool.aerich]
-tortoise_orm = "src.core.settings.DATABASE"
-location = "./migrations"
-src_folder = "./."
+tortoise_orm = "core.settings.DATABASE"
+location = "./src/migrations"
+src_folder = "./src"
+
 
 [tool.poetry]
 authors = ["Test <test@test.ru>"]
