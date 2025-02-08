@@ -10,33 +10,6 @@ tortoise_orm = "core.settings.DATABASE"
 location = "./src/migrations"
 src_folder = "./src"
 
-
-[tool.poetry]
-authors = ["Test <test@test.ru>"]
-description = ""
-name = "fastapi-example"
-readme = "README.md"
-version = "0.0.1"
-
-[tool.poetry.dependencies]
-asyncpg = "^0.30.0"
-bcrypt = "^4.2.1"
-cryptography = "^44.0.0"
-fastapi = "^0.115.8"
-passlib = "^1.7.4"
-pydantic = "^2.10.6"
-pyjwt = "^2.10.1"
-python = "~3.9.6"
-python-multipart = "^0.0.20"
-tortoise-orm = "^0.24.0"
-uvicorn = "^0.34.0"
-aerich = "^0.8.1"
-
-[tool.poetry.group.dev.dependencies]
-mypy = "^1.14.0"
-ruff = "^0.9.4"
-toml-sort = "^0.24.0"
-
 [tool.ruff]
 line-length = 160
 target-version = "py39"
