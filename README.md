@@ -20,7 +20,7 @@ cd fastapi-example
 ```
 ```
 pip install poetry==2.0.1
-poetry install
+poetry install --no-root
 ```
 ```
 python src/main.py
